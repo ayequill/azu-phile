@@ -1,0 +1,7 @@
+export const navigationLinks = [
+    { name: "Home", href: "/" },
+    { name: "Headphones", href: "/headphones" },
+    { name: "Speakers", href: "/speakers" },
+    { name: "Earphones", href: "/earphones" },
+  ];
+  
