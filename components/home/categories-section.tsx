@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ProductCard } from "../ui/product-card";
+import { ProductCard } from "@/components/common/product-card";
 
 const categories = [
   {
