@@ -10,9 +10,15 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Audiophile - Premium Audio Equipment",
+  title: {
+    template: "%s | Audiophile",
+    default: "Audiophile",
+  },
   description:
     "Discover premium audio equipment including headphones, speakers, and earphones",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

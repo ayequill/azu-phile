@@ -4,6 +4,11 @@ import ProductHighlight from "@/components/home/product-highlight-zx9";
 import ProductHighlightZx7 from "@/components/home/product-highlight-zx7";
 import ProductHighlightYx1 from "@/components/home/product-highlight-yx1";
 import About from "@/components/home/about";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
 
 export default function Home() {
   return (
