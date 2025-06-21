@@ -3,6 +3,8 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { CartProvider } from "@/contexts/use-toggle-cart";
+import { CartProvider as CartContextProvider } from "@/contexts/cart-context";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -29,9 +31,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} antialiased scroll-smooth`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <CartContextProvider>
+          <CartProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </CartProvider>
+        </CartContextProvider>
       </body>
     </html>
   );
