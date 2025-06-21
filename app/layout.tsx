@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${manrope.variable} antialiased scroll-smooth`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
