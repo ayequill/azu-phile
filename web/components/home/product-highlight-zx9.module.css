@@ -1,0 +1,12 @@
+.speakerBackground {
+  background-image: url("/assets/home/desktop/image-speaker-zx9.png");
+  background-size: auto 200px;
+  background-position: bottom -10% center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .speakerBackground {
+    background-size: auto 410px;
+  }
+}
