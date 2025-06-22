@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function ProductHighlight() {
   return (
@@ -9,8 +10,13 @@ export default function ProductHighlight() {
             <h2 className="text-black text-[28px] font-bold uppercase leading-[28px]">
               ZX7 <br className="hidden md:block" /> SPEAKER
             </h2>
-            <Button className="bg-transparent border border-black text-black hover:bg-black hover:text-white cursor-pointer">
-              See Product
+            <Button asChild className="bg-transparent border border-black text-black hover:bg-black hover:text-white">
+              <Link
+                href="/speakers/zx-7-speaker?d=bct6o3b1lv00fcqevk4c1cwx"
+                className="cursor-pointer text-black"
+              >
+                See Product
+              </Link>
             </Button>
           </div>
         </div>

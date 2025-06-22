@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function ProductHighlight() {
   return (
@@ -15,8 +16,16 @@ export default function ProductHighlight() {
                 Upgrade to premium speakers that are phenomenally built to
                 deliver truly remarkable sound.
               </p>
-              <Button className="bg-black text-white hover:bg-[#4C4C4C] cursor-pointer">
-                See Product
+              <Button
+                asChild
+                className="bg-black text-white hover:bg-[#4C4C4C]"
+              >
+                <Link
+                  href="/speakers/zx9-speaker?d=k78nz8fe6c6t0ml7n2ryqwnv"
+                  className="cursor-pointer text-white"
+                >
+                  See Product
+                </Link>
               </Button>
             </div>
           </div>

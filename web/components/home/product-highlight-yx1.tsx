@@ -1,4 +1,5 @@
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function ProductHighlight() {
   return (
@@ -8,8 +9,13 @@ export default function ProductHighlight() {
         <h2 className="text-black text-[28px] font-bold uppercase leading-[28px]">
           YX1 EARPHONES
         </h2>
-        <Button className="bg-transparent border border-black text-black hover:bg-black hover:text-white cursor-pointer">
-          See Product
+        <Button asChild className="bg-transparent border border-black text-black hover:bg-black hover:text-white">
+          <Link
+            href="/earphones/yx-1-wireless-earphones?d=ercyvsa6741238cc592q3jwj"
+            className="cursor-pointer text-black"
+          >
+            See Product
+          </Link>
         </Button>
       </div>
     </section>
