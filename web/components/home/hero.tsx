@@ -49,7 +49,7 @@ export default function Hero() {
 
           <Button
             asChild
-            className="bg-orange-500 hover:bg-orange-400 text-white font-bold uppercase tracking-wider shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-[#D87D4A] hover:bg-[#FBAF85] text-white font-bold uppercase tracking-wider shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <Link href="/headphones/xx99-mark-two-headphones?d=c3pnl4zd38ne5lnv7p5wz8sl">
               See Product

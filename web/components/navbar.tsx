@@ -195,7 +195,7 @@ export default function Navbar() {
                   height={20}
                   className="w-6 h-6"
                 />
-                {items.length > 0 && (
+                {items && items?.length > 0 && (
                   <motion.span
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
