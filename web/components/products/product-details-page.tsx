@@ -9,10 +9,12 @@ import About from "@/components/home/about";
 
 interface ProductDetailsPageProps {
   product: StrapiProduct;
+  suggestedProducts: StrapiProduct[];
 }
 
 export default function ProductDetailsPage({
   product,
+  suggestedProducts,
 }: ProductDetailsPageProps) {
   return (
     <div>
@@ -35,9 +37,9 @@ export default function ProductDetailsPage({
         You may also like
       </h1>
       <div className="flex flex-col md:flex-row lg:gap-20 gap-8 py-12 px-4 lg:px-0">
-        <SuggestedProductCard product={product} />
-        <SuggestedProductCard product={product} />
-        <SuggestedProductCard product={product} />
+        {suggestedProducts?.slice(0, 3).map((p, index) => (
+          <SuggestedProductCard key={p.id} product={p} index={index} />
+        ))}
       </div>
       <CategoriesSection />
       <About />
